@@ -1,0 +1,20 @@
+.container {
+    background-image: linear-gradient(
+        to right, 
+        rgba($color-black, 0.95),
+        rgba($color-black, 0.95)),
+        url(./../img/buddahtanooki.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: $color-grey-light;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    overflow: hidden;
+}

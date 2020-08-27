@@ -14,6 +14,14 @@
     --line: 1px solid var(--color-grey-light);
 }
 
+// COLOR VARIABLES
+$color-primary: #6D9BC3;
+$color-black: #1C1C1C;
+$color-grey-dark: #2E2E2E;
+$color-grey-light: #EBECF0;
+$color-grey: #BEBEBE;
+
+
 $bp-largest: 75em; // 1200px
 $bp-large: 68.75em; // 1100px
 $bp-medium: 56.25em; // 900px
@@ -42,5 +50,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
 
+    display: flex;
     min-height: 100vh;
+    width: 100%;
 }
