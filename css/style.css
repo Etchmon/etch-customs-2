@@ -92,7 +92,7 @@ body {
     display: flex;
     flex: 0 1 18vw;
     justify-content: center;
-    animation: fadeIn 6s ease-in;
+    animation: fadeIn 5s ease-in;
     filter: brightness(85%); }
     .albums__item:hover {
       filter: brightness(100%);
