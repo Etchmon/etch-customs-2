@@ -1,19 +1,34 @@
 .heading--primary {
     font-size: 10rem;
+    font-family: 'Abril Fatface', cursive;
     line-height: 1;
     padding-top: 15rem;
+
+    &-tanooki {
+        animation: moveInBottom 3s ease-in;
+    }
+
+    &-james {
+        animation: fadeIn 3s ease-in;
+    }
 }
 
 .heading--secondary {
     font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
     font-weight: 400;
     padding: 1.5rem;
+
+    animation: fadeIn 5s ease-in;
 }
 
 .paragraph {
     font-size: 1.5rem;
     line-height: 2;
+    font-family: 'Poppins', sans-serif;
+
+    animation: fadeIn 5s ease-in;
 }
 
 .albums {
@@ -27,13 +42,43 @@
         display: flex;
         flex: 1;
         justify-content: space-evenly;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
     }
 
     &__item {
         position: relative;
         display: flex;
-        flex: 0 1 25vw;
+        flex: 0 1 18vw;
         justify-content: center;
+        animation: fadeIn 6s ease-in;
+        filter: brightness(85%);
+
+        &:hover {
+            filter: brightness(100%);
+            box-shadow: var(--shadow-dark);
+            transform: translateY(-1.5rem) scale(1.03);
+        }
+
+        &-1 {
+            background-image: url(./../img/artworks-000564233864-gfbv2e-t200x200.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &-2 {
+            background-image: url(./../img/artworks-RJJHwjHq2djo2lKw-S2qkdQ-t200x200.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &-3 {
+            background-image: url(./../img/artworks-VVPukyiX7UdTWVOk-egUj7Q-t200x200.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     &__link {

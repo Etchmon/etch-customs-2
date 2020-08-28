@@ -8,7 +8,7 @@
     --color-grey-light: #EBECF0;
     --color-grey: #BEBEBE;
 
-    --shadow-dark: 0 2rem 6rem rgba(0,0,0,0.3);
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,0.5);
     --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
 
     --line: 1px solid var(--color-grey-light);
@@ -20,6 +20,34 @@ $color-black: #1C1C1C;
 $color-grey-dark: #2E2E2E;
 $color-grey-light: #EBECF0;
 $color-grey: #BEBEBE;
+
+// ANIMATIONS
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        margin-bottom: 10rem;
+    }
+
+    100% {
+        opacity: 1;
+        margin-bottom: 0    ;
+        transform: translate(0);
+    }
+}
 
 
 $bp-largest: 75em; // 1200px
@@ -42,6 +70,10 @@ html {
 
     @media only screen and (max-width: $bp-large) {
         font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 30%;
     }
 }
 
