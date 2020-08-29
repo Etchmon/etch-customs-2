@@ -49,6 +49,17 @@ $color-grey: #BEBEBE;
     }
 }
 
+// FONTS
+@font-face {
+    src: url(./../fonts/SnesItalic-vmAPZ.ttf);
+    font-family: 'snes';
+}
+
+@font-face {
+    src: url(./../fonts/Nintender-Mm1B.ttf);
+    font-family: 'nint';
+}
+
 
 $bp-largest: 75em; // 1200px
 $bp-large: 68.75em; // 1100px

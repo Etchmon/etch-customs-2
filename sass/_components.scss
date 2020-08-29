@@ -1,8 +1,10 @@
 .heading--primary {
-    font-size: 10rem;
-    font-family: 'Abril Fatface', cursive;
+    font-size: 12rem;
+    font-family: 'snes';
+    letter-spacing: 1rem;
     line-height: 1;
     padding-top: 8rem;
+    text-transform: uppercase;
 
     &-tanooki {
         animation: moveInBottom 3s ease-in;
@@ -15,7 +17,7 @@
 
 .heading--secondary {
     font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'nint';
     letter-spacing: 3px;
     font-weight: 400;
     padding: 1.5rem;
@@ -26,7 +28,7 @@
 .link {
     font-size: 1.5rem;
     line-height: 2;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'nint';
     color: $color-grey-light;
 
     animation: fadeIn 5s ease-in;
