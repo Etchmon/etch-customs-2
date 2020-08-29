@@ -2,7 +2,7 @@
     font-size: 10rem;
     font-family: 'Abril Fatface', cursive;
     line-height: 1;
-    padding-top: 15rem;
+    padding-top: 8rem;
 
     &-tanooki {
         animation: moveInBottom 3s ease-in;
@@ -23,17 +23,18 @@
     animation: fadeIn 5s ease-in;
 }
 
-.paragraph {
+.link {
     font-size: 1.5rem;
     line-height: 2;
     font-family: 'Poppins', sans-serif;
+    color: $color-grey-light;
 
     animation: fadeIn 5s ease-in;
 }
 
 .albums {
     padding: 5rem;
-    height: 50vh;
+    flex: 1;
     display: flex;
     width: 100%;
 
@@ -43,15 +44,20 @@
         flex: 1;
         justify-content: space-evenly;
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-medium) {
             flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            flex: 1;
         }
     }
 
     &__item {
         position: relative;
         display: flex;
-        flex: 0 1 18vw;
+        height: 20vw;
+        width: 20vw;
+        border-radius: 2px;
         justify-content: center;
         animation: fadeIn 5s ease-in;
         filter: brightness(85%);
@@ -79,6 +85,12 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 2rem;
+            height: 60vw;
+            width: 60vw;
+        }
     }
 
     &__link {
@@ -92,9 +104,17 @@
             align-items: center;
         }
     }
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+    }
 }
 
 .footer {
     text-align: center;
     margin-top: 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 2rem;
+    }
 }
