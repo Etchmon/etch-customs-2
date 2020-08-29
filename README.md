@@ -1,6 +1,6 @@
 # TANOOKI JAMES
 
-<img src="https://github.com/Etchmon/etch-customs-1/blob/master/img/127.0.0.1_8080_%20(1).png" alt="Deep Dive" height="250" width="500">
+<img src="https://github.com/Etchmon/etch-customs-2/blob/master/img/etchmon.github.io_etch-customs-2_.png" alt="Deep Dive" height="250" width="500">
 
 Check out rapper Tanooki James at his new website landing page. Show casing 3 of his most popular albums and a link to his soundcloud. The site is built using flexbox and is 100% mobile friendly.
 
